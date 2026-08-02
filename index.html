@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Vaulted | Engineered for the Underground</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "gold-leaf": "#E5B169",
+                        "surface": "#0d0d0d",
+                        "background": "#0d0d0d",
+                        "surface-container": "#181818",
+                        "surface-container-high": "#242424",
+                        "surface-container-lowest": "#080808",
+                        "primary": "#f4bd6c",
+                        "on-primary": "#241600",
+                        "on-surface": "#e5e2e1",
+                        "on-surface-variant": "#a3998e",
+                        "outline-variant": "#3a332a",
+                        "onyx-black": "#050505"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.75rem",
+                        "xl": "1.25rem",
+                        "2xl": "1.75rem"
+                    },
+                    spacing: {
+                        "margin": "32px",
+                        "lg": "24px",
+                        "xl": "48px"
+                    },
+                    fontFamily: {
+                        "headline": ["Playfair Display", "serif"],
+                        "body": ["DM Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-body text-on-surface selection:bg-primary/30 selection:text-white relative">
+
+<div class="grain-overlay"></div>
+<div class="ambient-mesh"></div>
+
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/20 transition-all duration-300">
+    <div class="flex justify-between items-center px-6 md:px-margin py-4 max-w-[1440px] mx-auto w-full">
+        <a class="flex items-center gap-3 font-headline text-2xl font-bold text-primary tracking-tight group" href="#">
+            <div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border border-primary/30 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-105">
+                <img alt="Vaulted Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKTFA1X641Xe_7WdrhHslSATDO3jYVSW0eihXiNCJYtRFxbQsrQlycnqRinUXLENZHhKDg7PbCNgOjP-u15i2FOE7qMxRNxJ6qtbp56aLVzWBNu_tIGtMrGaagHvJMODFCqL7ummJV_Ht79qjfEfPm0VnoIabtwll7aIbaAB1PYY4I_QUEW3o7ff-vSU_DIycS6MmCMBlY0mPh-tHcI-RXscZRIAUu4K7jByxoqx-XB7SXtJ_F9Dl8MTkwBv5lHvWUVw">
+            </div>
+            <span class="tracking-wider">VAULTED</span>
+        </a>
+        
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-xs uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1" href="#">Home</a>
+            <a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#artists">Artists</a>
+            <a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#portfolio">Portfolio</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a class="btn-shimmer active:scale-95 bg-primary text-on-primary px-6 py-2.5 text-xs font-bold uppercase tracking-widest rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/10" href="https://vaulted-app-six.vercel.app/">
+                Request Invite
+            </a>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-[80px] relative z-10">
+    <!-- Hero Section -->
+    <section class="relative min-h-[92vh] flex items-center overflow-hidden py-12">
+        <div class="absolute inset-0 z-0">
+            <img alt="Hero background" class="w-full h-full object-cover opacity-40 scale-105 animate-pulse" style="animation-duration: 8s;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOFIN9bCe3_Yd3MBmvI2rkMKeeOOPkQPRNTF_rTfJhb6LOY4aITK_SWRFxWLZKydH3-zkJLamkw2kN0m0lof7wjmMjqa0FHmyWRA3zfY0lRTTZ3d1VpPLj-U2bu3kvbd6FUhiQK6_9_W6CnQ199PybDjM8RLtRbt5oeT-XVyBVuogsuyLwgJLKNloeyOjD3aId0EEA0UrkivDTfY5PwzXW7UJuk9wTyXpVLnU5m7X1C_14tEUM0loPaMlvzDRQbAvQ9g">
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 px-6 md:px-margin max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 reveal">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container border border-primary/30">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                    <span class="text-xs uppercase tracking-[0.25em] text-primary font-semibold">Est. 2026 / Elite Edition</span>
+                </div>
+                
+                <h1 class="font-headline text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-[1.08] tracking-tight">
+                    Master Your <br><span class="italic text-primary font-normal">Craft.</span>
+                </h1>
+                
+                <p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    The ultimate management ecosystem for elite tattoo artists. Reclaim your focus, automate the noise, and elevate your studio's professional pulse.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a class="btn-shimmer bg-primary text-on-primary px-8 py-4 text-xs font-bold uppercase tracking-widest rounded-xl shadow-xl shadow-primary/20 hover:scale-105 transition-all text-center" href="https://vaulted-app-six.vercel.app/">
+                        Join the Collective
+                    </a>
+                    <a href="https://vaulted-app-six.vercel.app/" class="glass-card text-white px-8 py-4 text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all text-center">
+                        View Experience
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section 1: Precision Management -->
+    <section class="py-28 relative overflow-hidden bg-onyx-black/50">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-margin grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+            <div class="relative order-2 lg:order-1 reveal">
+                <div class="glass-card p-2 rounded-2xl overflow-hidden aspect-[3/4] max-h-[650px] shadow-2xl relative z-10 group">
+                    <img alt="Precision Management" class="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd2TMHE8k7l_MqLsyDYOGRoPxYArFPNjB1KeTHVMKO2z_Kf3ZSxcD_tH0PqIQ2SdQB1BaZfvy7MSidiJ40TIy2ockywMmcOSxHtpeknJ-mpjVCkL7o0V7DI6t9ubr24yTsRfSGcBtfbEfKjQBLSPHAX4klTWcEeXJXjKDNa-ZM_OiJu-VAg4ThxUP6PL73BEGnH4V3zJf8UpbGGmevNipqEuuU9lnIQ0amE9aMqRmP_XY5rx_oaJsApk8qW5amnOquqg">
+                </div>
+                <div class="absolute -top-12 -left-12 w-72 h-72 bg-primary/20 rounded-full blur-[120px] -z-10"></div>
+            </div>
+
+            <div class="space-y-8 order-1 lg:order-2 reveal">
+                <span class="text-xs uppercase tracking-[0.4em] text-primary font-bold">/ 01 Precision</span>
+                <h2 class="font-headline text-4xl sm:text-5xl font-bold text-white leading-tight">
+                    Secure Studio <br><span class="italic font-normal text-primary">Future.</span>
+                </h2>
+                <p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    Precision is not just in the needle; it's in the process. Vaulted provides a hardened infrastructure for your business, ensuring every booking and client interaction is handled with surgical accuracy.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-2">
+                    <div class="glass-card p-6 rounded-xl">
+                        <p class="text-white font-headline text-4xl font-bold mb-1">100%</p>
+                        <p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Automated Intake</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl">
+                        <p class="text-white font-headline text-4xl font-bold mb-1">Zero</p>
+                        <p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Admin Leakage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built for the Bold (Booking Features) -->
+    <section class="py-28 px-6 md:px-margin max-w-[1440px] mx-auto" id="artists">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6 reveal">
+            <div class="max-w-2xl">
+                <h2 class="font-headline text-4xl sm:text-5xl font-bold text-white mb-4">
+                    Built for the <span class="text-primary italic font-normal">Bold.</span>
+                </h2>
+                <p class="text-lg text-on-surface-variant">Ditch the chaos of DMs and disorganized calendars. Vaulted centralizes your bookings with surgical precision.</p>
+            </div>
+            <div class="text-xs text-primary tracking-widest uppercase font-bold">/ Ecosystem Features</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-2xl group tilt-card reveal">
+                <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
+                    <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-white mb-3">All-in-One Management</h3>
+                <p class="text-on-surface-variant leading-relaxed">Bookings, clients, payments, and consent forms in one place. Manage your studio seamlessly between sessions.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl group tilt-card reveal" style="transition-delay: 150ms;">
+                <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
+                    <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">lock</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-white mb-3">Private Network</h3>
+                <p class="text-on-surface-variant leading-relaxed">An exclusive ecosystem built for elite studios. No public directory clutter—just your brand, front and center.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl group tilt-card reveal" style="transition-delay: 300ms;">
+                <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
+                    <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-white mb-3">Legal-Grade Consent</h3>
+                <p class="text-on-surface-variant leading-relaxed">Digital consent forms with signature capture and replay protection. Hardened security for your client data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section 2: Artist Independence -->
+    <section class="py-28 relative overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-margin grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+            <div class="space-y-8 reveal">
+                <span class="text-xs uppercase tracking-[0.4em] text-primary font-bold">/ 02 Liberty</span>
+                <h2 class="font-headline text-4xl sm:text-5xl font-bold text-white leading-tight">
+                    The Elite <br><span class="italic font-normal text-primary">Toolset.</span>
+                </h2>
+                <p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    Vaulted isn't a platform; it's an extension of your craft. We provide the digital equivalent of high-end coils—built for longevity, reliability, and unparalleled performance. 
+                </p>
+                <div class="space-y-6 pt-2">
+                    <div class="flex items-start gap-4 glass-card p-4 rounded-xl">
+                        <span class="material-symbols-outlined text-primary text-2xl p-2 bg-surface-container rounded-lg">bolt</span>
+                        <div>
+                            <p class="text-white font-bold text-base">Fast-Lane Invoicing</p>
+                            <p class="text-sm text-on-surface-variant">Direct payments with zero platform commission.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 glass-card p-4 rounded-xl">
+                        <span class="material-symbols-outlined text-primary text-2xl p-2 bg-surface-container rounded-lg">shield</span>
+                        <div>
+                            <p class="text-white font-bold text-base">Artist Protection</p>
+                            <p class="text-sm text-on-surface-variant">Smart contracts for deposits and cancellations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative reveal">
+                <div class="glass-card p-2 rounded-2xl overflow-hidden aspect-[3/4] max-h-[650px] shadow-2xl relative z-10 group">
+                    <img alt="Artist Independence" class="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ430FukF2qOp1FzNQMUhMyAgJtatgveJ2pMaI3X7eDM6mxIyIof5t8bwuIW6TRppx0U30q5mDiwnIeAhFq8vN7iCZrKeKsvz3KLY3yaigzj6W-ezb1y_RtUcbNzZ9XAspbhDz6ysHgbFN7dKzJDVertQzJqGg6hbg0UgInOLR5jVThu2cseZbht6YgoPoh-muAsFDybl6uXx5x3uGT-VTsmsi0sLgpd_bffT9UIeWDWsOA1m7kXuksVPbkPsUlEs5Kw">
+                </div>
+                <div class="absolute -bottom-12 -right-12 w-72 h-72 bg-primary/20 rounded-full blur-[120px] -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Your Soul (Portfolio Tools) -->
+    <section class="py-28 bg-surface-container-lowest/50" id="portfolio">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-margin">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 reveal">
+                    <div class="grid grid-cols-2 gap-4 relative">
+                        <div class="space-y-4">
+                            <div class="glass-card overflow-hidden rounded-xl h-80 group">
+                                <img alt="Modern Studio Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSvRbTKLPFs7ovy8FUv6_VBWfpF3Nv7J-wIktwYuMrPnWK87VnBX9CljzCePW0llCM-8XObFbbWOiHFv9IjNdZ3_VDI53PhxhK0ao3Wa9Gyo6CHoaJdRaecml9OPvtWrNL2tXv_JsvOVgSKPxQRMHkm7v5eMr5DRLxzlYE4m2cTkND0d2gp5FpxqCziQd69KmoCE2k8_5E7HRxiad5FNfjM9Bgr1hOVx-MDz0OoiEmbBHOwRhbnkOQrQkxysqK3qdoiw">
+                            </div>
+                            <div class="glass-card overflow-hidden rounded-xl h-48 group">
+                                <img alt="Artistic Detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJBHtxX0_B-ddy7A6n3mZl9uBzcWNunr019XzZCbRPOGTFgwgUSYwJbS5KpXR8jI17JOVZqrAooXhjOK3o1GcoxNtODpg1ReepdfTJc2qJb6aGmSKGGPbJqfj7o8ENB-wTR1RrEipVhW_LoymIB-vuhYK1AE0QSCbw6jceJ6o6NzWn3LCrrjFqdtSyUw7ASZIjjV1iJScjvCbQ3rkkHM-e4YE7LwZJ4kPhu_tIA50eD_DXZPqn8GgZC-sH3q32YpwWOQ">
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-8">
+                            <div class="glass-card overflow-hidden rounded-xl h-48 group">
+                                <img alt="Workplace" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPmkUbEsahM1ceKRGMWxCCU70gG47el_K8oQ52Q_hLqV4EL7V16ozKBiJjcM0Z2rPh2vrQxGLOZ4oL7PiiYhybaB-JeI7gr-pO1k21KuyerdwyQtYylUSdpKmI52AF6OMq9LIhTaqOImgHRWd1DuW4PQPDTfzKcHWedrbEfX3DtQowDqkJfz12lnyMR4wXj5LXbnmttlzdHceLFSA50YannqAL_1ZU3o0PL8B3E-ez0qYfLZL-Vc7DFMUm2ySphiIKIQ">
+                            </div>
+                            <div class="glass-card overflow-hidden rounded-xl h-80 group">
+                                <img alt="Detailed Work" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJxMMjOGIQPeQ3sR_t62xFpJUc8A7Rrgioc-UhXPhDP06Io3boFGh_p-HXzjelyegCtLVV2ZpJEF1xDLPzsL4McZK2VOgYRbMvS2bhi69kJhGcDfWxlDcxUmnuh_hgegBtOTkPR-r5cTlN6dkb7r1GiKEvo90Q7Wik7vaCySeHlqd89OVaadCldjQGRq3t5ptd5UXV5b-UqUB9zKGz_9TTcWcVkO114TcEDgWEo779Ztq9XY1S7Q7obZv15hIR582PTQ">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Tag -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glass-card p-6 rounded-2xl shadow-2xl hidden sm:block border-primary/40 backdrop-blur-2xl">
+                            <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Portfolio Engine</p>
+                            <p class="font-headline text-xl text-white italic">Ultra-High Dynamic Dynamic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 space-y-8 reveal">
+                    <span class="text-xs uppercase tracking-[0.4em] text-primary font-bold">/ Digital Legacy</span>
+                    <h2 class="font-headline text-4xl sm:text-5xl font-bold text-white leading-tight">
+                        Showcase <br>Your <span class="italic font-normal text-primary">Soul.</span>
+                    </h2>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        Your portfolio is your legacy. Vaulted provides high-contrast, edge-to-edge galleries that treat your work like the fine art it is.
+                    </p>
+                    <ul class="space-y-4 pt-2">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span class="text-on-surface font-medium">Instantly shoppable Flash designs</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span class="text-on-surface font-medium">High-resolution zoom for linework detail</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span class="text-on-surface font-medium">Integrated "Claim Design" booking flow</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Intake Redefined -->
+    <section class="py-24 px-6 md:px-margin max-w-[1440px] mx-auto reveal">
+        <div class="glass-card relative overflow-hidden p-10 lg:p-24 text-center rounded-3xl border-primary/30">
+            <div class="absolute inset-0 z-0 opacity-10">
+                <div class="w-full h-full" style="background-image: radial-gradient(circle, #f4bd6c 1px, transparent 1px); background-size: 28px 28px;"></div>
+            </div>
+            <div class="relative z-10 space-y-8 max-w-3xl mx-auto">
+                <h2 class="font-headline text-4xl sm:text-6xl font-bold text-white leading-tight">
+                    Client Intake <span class="italic font-normal text-primary">Redefined.</span>
+                </h2>
+                <p class="text-lg text-on-surface-variant leading-relaxed">
+                    Say goodbye to physical clipboards and repetitive questions. Professional digital intake forms that capture medical history, consent, and design references before they step in the door.
+                </p>
+                <div class="pt-4 flex justify-center">
+                    <button class="btn-shimmer bg-primary text-on-primary px-10 py-4 text-xs uppercase tracking-widest font-bold rounded-xl hover:bg-primary/90 transition-all shadow-xl shadow-primary/20">
+                        Request Access to Portal
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest/80 border-t border-outline-variant/20 w-full relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 px-6 md:px-margin py-16 max-w-[1440px] mx-auto">
+        <div class="col-span-1">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-primary/30">
+                    <img alt="Vaulted Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUaS4g0DS-PiGKrj6Pdn38WVmQiSm5oSnc8U9eGuCBDvTEX3JDS33zUczlm1QZ2p4KJ9muzfpIrWG_HIQPG8b12NOoY6TGoMw73xSASA35uY6hZn2N_Q9dUodT9vFbr3f37C8w7z7KagFO-0Gk_VqOHeVtAzVTFpmdcNB6sfgcSvaBJc45rXmrkAGV_ADRVhbirsXAATfcku1K5wC9Xb39a9Ewm1hX3dZ7QtbYipxeNXWVohQA5Asv4fpeGqkRS8II2A">
+                </div>
+                <h4 class="font-headline text-2xl text-primary font-bold">Vaulted</h4>
+            </div>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Engineered for the underground, built for the professional.</p>
+        </div>
+
+        <div class="space-y-3">
+            <p class="text-xs uppercase font-bold text-white tracking-widest mb-4">Navigation</p>
+            <a class="block text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Artists</a>
+            <a class="block text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Portfolio</a>
+            <a class="block text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Support</a>
+        </div>
+
+        <div class="space-y-3">
+            <p class="text-xs uppercase font-bold text-white tracking-widest mb-4">Collective</p>
+            <a class="block text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Artist Portal</a>
+            <a class="block text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Join Waitlist</a>
+            <a class="block text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Refer Studio</a>
+        </div>
+
+        <div class="space-y-4">
+            <p class="text-xs uppercase font-bold text-white tracking-widest mb-4">In the Loop</p>
+            <div class="flex flex-col gap-2">
+                <input class="bg-surface-container border border-outline-variant/40 focus:border-primary focus:ring-1 focus:ring-primary text-xs p-3 placeholder:text-on-surface-variant/50 rounded-lg outline-none transition-all" placeholder="EMAIL ADDRESS" type="email">
+                <button class="btn-shimmer bg-primary text-on-primary py-3 text-xs font-bold uppercase tracking-widest rounded-lg transition-all">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="border-t border-outline-variant/10 py-6 px-6 text-center">
+        <p class="text-xs text-on-surface-variant/50">© 2024 Vaulted. Engineered for the Underground.</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
